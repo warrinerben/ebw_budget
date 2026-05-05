@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple App – AppData</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>AppData Records</h1>
+
+    <section class="card">
+      <h2>Add Record</h2>
+      <form id="recordForm">
+        <label>
+          Name
+          <input type="text" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" required />
+        </label>
+        <label>
+          Notes
+          <textarea id="notes" rows="3"></textarea>
+        </label>
+        <button type="submit">Save</button>
+      </form>
+      <p id="formMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Records</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Notes</th>
+            <th>Created</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="recordsBody"></tbody>
+      </table>
+      <p id="listMessage" class="message"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
